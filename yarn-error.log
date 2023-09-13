@@ -1,0 +1,71 @@
+Arguments: 
+  /usr/bin/node /usr/share/yarn/bin/yarn.js add axios react-router-dom react-bootstrap bootstrap
+
+PATH: 
+  /usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/snap/bin:/snap/bin
+
+Yarn version: 
+  1.22.19
+
+Node version: 
+  20.5.1
+
+Platform: 
+  linux x64
+
+Trace: 
+  Error: https://registry.npmjs.org/@testing-library%2fjest-dom: tunneling socket could not be established, cause=getaddrinfo ENOTFOUND proxy.example.com
+      at ClientRequest.onError (/usr/share/yarn/lib/cli.js:152376:17)
+      at Object.onceWrapper (node:events:629:26)
+      at ClientRequest.emit (node:events:514:28)
+      at Socket.socketErrorListener (node:_http_client:495:9)
+      at Socket.emit (node:events:514:28)
+      at emitErrorNT (node:internal/streams/destroy:151:8)
+      at emitErrorCloseNT (node:internal/streams/destroy:116:3)
+      at process.processTicksAndRejections (node:internal/process/task_queues:82:21)
+
+npm manifest: 
+  {
+    "name": "mi_app_react",
+    "version": "0.1.0",
+    "private": true,
+    "dependencies": {
+      "@testing-library/jest-dom": "^5.17.0",
+      "@testing-library/react": "^13.4.0",
+      "@testing-library/user-event": "^13.5.0",
+      "react": "^18.2.0",
+      "react-dom": "^18.2.0",
+      "react-scripts": "5.0.1",
+      "web-vitals": "^2.1.4"
+    },
+    "scripts": {
+      "start": "react-scripts start",
+      "build": "react-scripts build",
+      "test": "react-scripts test",
+      "eject": "react-scripts eject"
+    },
+    "eslintConfig": {
+      "extends": [
+        "react-app",
+        "react-app/jest"
+      ]
+    },
+    "browserslist": {
+      "production": [
+        ">0.2%",
+        "not dead",
+        "not op_mini all"
+      ],
+      "development": [
+        "last 1 chrome version",
+        "last 1 firefox version",
+        "last 1 safari version"
+      ]
+    }
+  }
+
+yarn manifest: 
+  No manifest
+
+Lockfile: 
+  No lockfile
